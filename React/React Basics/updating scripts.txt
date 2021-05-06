@@ -1,0 +1,2 @@
+To update scripts just simply update the version in package.json and the run the command in the project dir:
+npm install

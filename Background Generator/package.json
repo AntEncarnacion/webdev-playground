@@ -1,0 +1,22 @@
+{
+  "name": "background-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build": "browserify script.js > bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntEncarnacion/Background-Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntEncarnacion/Background-Generator/issues"
+  },
+  "homepage": "https://github.com/AntEncarnacion/Background-Generator#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}

@@ -1,0 +1,2 @@
+From the terminal use the command:
+npx create-react-app <name of project>
