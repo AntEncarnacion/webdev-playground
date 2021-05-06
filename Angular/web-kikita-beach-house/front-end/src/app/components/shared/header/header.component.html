@@ -1,0 +1,84 @@
+<header
+  class="container-fluid shadow"
+  [ngClass]="{
+    'header-relative': relative,
+    'header-fixed': fixed && backgroundColor,
+    'header-fixed-no-bg': !backgroundColor,
+    shadow: backgroundColor
+  }"
+>
+  <div class="d-md-block d-none">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="row">
+          <a
+            href="https://www.facebook.com/pages/category/Restaurant/Kikita-Beach-House-101712424644273/"
+          >
+            <img
+              src="../../../assets/images/iconfinder_Colored_Facebook3_svg_5365678.svg"
+              alt=""
+              srcset=""
+              style="width: 25px; height: 25px;"
+              class="m-2"
+          /></a>
+
+          <a href="https://www.instagram.com/kikitabeachhouse/">
+            <img
+              src="../../../assets/images/iconfinder_1_Instagram_colored_svg_1_5296765.svg"
+              alt=""
+              srcset=""
+              style="width: 26px; height: 26px;"
+              class="m-2"
+          /></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img
+          src="assets\images\kikita-logo.svg"
+          alt=""
+          class="header-logo mx-auto d-block rounded-circle shadow bg-secondary"
+        />
+      </div>
+      <div class="col-md-4">
+        <div class="float-right d-none d-md-block">
+          <button class="btn btn-secondary shadow rounded header-button">
+            ORDENA YA!
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-sm-none">
+    <div class="row">
+      <div class="col-3">
+        <a
+          href="https://www.facebook.com/pages/category/Restaurant/Kikita-Beach-House-101712424644273/"
+        >
+          <img
+            src="../../../assets/images/iconfinder_Colored_Facebook3_svg_5365678.svg"
+            alt=""
+            srcset=""
+            style="width: 25px; height: 25px; margin-top: 0.8rem;"
+        /></a>
+      </div>
+      <div class="col-6">
+        <img
+          src="assets\images\kikita-logo.svg"
+          alt=""
+          class="header-logo mx-auto d-block rounded-circle shadow bg-secondary"
+        />
+      </div>
+      <div class="col-3">
+        <a href="https://www.instagram.com/kikitabeachhouse/">
+          <img
+            src="../../../assets/images/iconfinder_1_Instagram_colored_svg_1_5296765.svg"
+            alt=""
+            srcset=""
+            style="width: 27px; height: 27px; margin-top: 1rem;"
+            class="float-right"
+        /></a>
+      </div>
+    </div>
+  </div>
+</header>

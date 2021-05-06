@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="calculator">
+            <input type="text" id="display" readonly>
+            <div class="grid-container">
+                <button class="grid-item" onclick="onButtonPress(7)">7</button>
+                <button class="grid-item" onclick="onButtonPress(8)">8</button>
+                <button class="grid-item" onclick="onButtonPress(9)">9</button>
+                <button class="grid-item" onclick="onButtonPress('+')">+</button>
+                <button class="grid-item" onclick="onButtonPress(4)">4</button>
+                <button class="grid-item" onclick="onButtonPress(5)">5</button>
+                <button class="grid-item" onclick="onButtonPress(6)">6</button>
+                <button class="grid-item" onclick="onButtonPress('-')">-</button>
+                <button class="grid-item" onclick="onButtonPress(1)">1</button>
+                <button class="grid-item" onclick="onButtonPress(2)">2</button>
+                <button class="grid-item" onclick="onButtonPress(3)">3</button>
+                <button class="grid-item" onclick="onButtonPress('*')">*</button>
+                <button class="grid-item" onclick="onButtonPress('=')">=</button>
+                <button class="grid-item" onclick="onButtonPress(0)">0</button>
+                <button class="grid-item" onclick="onButtonPress('.')">.</button>
+                <button class="grid-item" onclick="onButtonPress('/')">/</button>
+            </div>
+            <button class="clearButton" onclick="clearDisplay()">Clear</button>
+        </div>
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>

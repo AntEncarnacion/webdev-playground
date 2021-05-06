@@ -1,0 +1,18 @@
+body {
+    background-color: #effffb;
+}
+hr {
+    border-style: dotted none none;
+    width: 5%;
+    border-color: #50d890;
+    border-width: 5px;
+}
+
+h1, h3, p, li, td {
+    color: #272727;
+}
+
+input, textarea {
+    background-color: white;
+    border-color: #4f98ca;
+}
