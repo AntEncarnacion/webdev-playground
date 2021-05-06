@@ -1,0 +1,36 @@
+<label>Server Name</label>
+<!-- $event captures data of event and sends it to your function. -->
+<!-- <input type="text" class="form-control" (input)="onUpdateServerName($event)" /> -->
+<!-- Two way binding reacts to events in both directions -->
+<input type="text" class="form-control" [(ngModel)]="serverName" />
+
+<!-- property binding is done with []. Event binding is done with (). ts code goes in the ""  -->
+<!-- <p>{{ serverName }}</p> -->
+<button
+  class="btn btn-primary"
+  [disabled]="!allowNewServer"
+  (click)="onCreateServer()"
+>
+  Add Server
+</button>
+<!-- property binding -->
+<!-- <p [innerText]="allowNewServer">allowNewServer</p> -->
+<!-- String interpolation -->
+<!-- <p>{{ allowNewServer }}</p> -->
+<!-- For text use string interpolation, for changing component, element or directory 
+    use property binding. Don't mix them in the same tag! -->
+<!-- <p>{{ serverCreationStatus }}</p> -->
+
+<!-- * means its a structural directive that changes the DOM. Basically if the logic 
+is false then the tag will dissappear. If the logic is true then the element will appear-->
+<!-- this is basically an if/else statement. -->
+<p *ngIf="serverCreated; else noServer">
+  Server was created. Server name is {{ serverName }}
+</p>
+<!-- # local reference that will be used in the else statement above -->
+<!-- ng-template is a conditional wrapper that will not always show up. -->
+<ng-template #noServer><p>No server was created.</p></ng-template>
+
+<app-server *ngFor="let server of servers"></app-server>
+
+<!-- structural directives start with * while attribute directives dont -->
