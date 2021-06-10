@@ -1,9 +1,0 @@
-AngularJS = AngularJS
-
-modern -> Angular9
-
-New version every 6 months-ish
-
-They add features and fix bugs, minor things change. But overall same framework an backwards compatible.
-
-Since it updates often just call it Angular.
